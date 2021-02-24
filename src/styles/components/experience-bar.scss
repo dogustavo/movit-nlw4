@@ -1,0 +1,33 @@
+.experience-bar {
+    
+
+    .wrap-experience-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .experience-text {
+        font-size: $font-sm;
+    }
+
+    .experence-line {
+        flex: 1;
+        height: 4px;
+        border-radius: 4px;
+        background-color: $color-gray-line;
+        margin: 0 rem(40);
+        position: relative;
+    }
+
+    .experence-line-complete {
+        height: 4px;
+        border-radius: 4px;
+        background-color: $color-green;
+    }
+
+    .current-experience-text {
+        position: absolute;
+        transform: translateX(-50%);
+        top: rem(12);
+    }
+}

@@ -1,0 +1,33 @@
+.wrap-profile-content {
+    display: flex;
+    align-items: center;
+
+    .profile-image {
+        width: rem(88);
+        height: rem(88);
+        border-radius: 50%;
+    }
+
+    .wrap-profile-info {
+        margin-left: rem(40);
+    }
+
+    .profile-name {
+        font-size: $font-md;
+        font-weight: $bold;
+        color: $color-title;
+    }
+
+    .profile-level {
+        font-size: $font-sm;
+        font-weight: $bold;
+        margin-top: rem(8);
+
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-icon-level {
+        margin-right: rem(8);
+    }
+}
