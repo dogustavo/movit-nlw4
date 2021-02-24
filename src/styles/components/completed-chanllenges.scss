@@ -1,0 +1,18 @@
+.completed-challenges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: rem(56) 0;
+    padding-bottom: rem(16);
+    border-bottom: 1px solid #d7d8da;
+
+    font-weight: $regular;
+
+    .challenges-title {
+        font-size: $font-sm-alt;
+    }
+    .challenges-completed-text {
+        font-size: $font-md;
+    }
+}
