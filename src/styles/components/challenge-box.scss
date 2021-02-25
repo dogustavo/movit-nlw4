@@ -1,0 +1,106 @@
+.challenge-box-container {
+    height: 100%;
+    background: $color-white;
+    border-radius: rem(5);
+
+    box-shadow: 0 0 rem(60) rgba(0, 0, 0, 0.05);
+    padding: rem(20) rem(32);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+
+    .challenge-not-active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .challenge-title {
+        font-size: $font-md;
+        font-weight: $regular;
+        line-height: 1.4;
+    }
+
+    .challenge-description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        line-height: 1.4;
+        max-width: 70%;
+        margin-top: rem(48);
+    }
+
+    .arrow-image {
+        margin-bottom: rem(16);
+    }
+
+    .challenge-active {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .challenge-active-header {
+        color: $color-blue;
+        font-weight: $bold;
+        font-size: $font-sm-alt;
+        padding: 0 rem(32) rem(24);
+        border-bottom: 1px solid $color-gray-line;
+    }
+
+    .challenge-active-main {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    .challenge-active-title {
+        font-weight: $bold;
+        font-size: $font-lg;
+        color: $color-title;
+        margin: rem(24) 0 rem(16);
+    }
+
+    .challenge-active-button-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(16);
+    }
+
+    .challenge-button {
+        height: rem(48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: rem(5);
+        color: $color-white;
+        font-size: $font-sm;
+        font-weight: $bold;
+        transition: filter .2s ease;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+
+        &.falied {
+            background: $color-red;
+        }
+        &.succeeded {
+            background: $color-green;
+        }
+    }
+}
