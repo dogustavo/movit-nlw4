@@ -4,6 +4,7 @@ import { Countdown } from '../components/Countdown'
 import { ExperienceBar} from '../components/ExperienceBar'
 import { Profile } from '../components/Profile'
 import Seo from '../components/seo'
+import { CountdownProvider } from '../contexts/CountdownContext'
 
 export default function Home() {
     return (
@@ -12,16 +13,18 @@ export default function Home() {
             <div className="container">
                 <ExperienceBar />
 
-                <section className="wrapper-home-content">
-                    <div className="left-container">
-                        <Profile/>
-                        <CompletedChallenges/>
-                        <Countdown/>
-                    </div>
-                    <div className="right-container">
-                        <ChallengeBox />
-                    </div>
-                </section>
+                <CountdownProvider>
+                    <section className="wrapper-home-content">
+                        <div className="left-container">
+                            <Profile/>
+                            <CompletedChallenges/>
+                            <Countdown/>
+                        </div>
+                        <div className="right-container">
+                            <ChallengeBox />
+                        </div>
+                    </section>
+                </CountdownProvider>
             </div>
         </div>
     );
