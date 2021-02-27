@@ -5,7 +5,9 @@
 
 <div align="center">
   <img width="500" style="border-radius: 5px" height="auto" alt="Home" title="Home" src="public/print.png" />
-  <img width="500" style="border-radius: 5px" height="auto" alt="level.up" title="Level Up" src="public/print2.png" />
+</div>
+<div align="center">
+    <img width="500" style="border-radius: 5px" height="auto" alt="level.up" title="Level Up" src="public/print2.png" />
 </div>
 
 <h2 id="technologies"> 🛠 Tecnologias </h2>
